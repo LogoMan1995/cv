@@ -4,11 +4,9 @@ const menuBtnIcon = menuBtn.querySelector("i");
 
 menuBtn.addEventListener("click", () => {
   navLinks.classList.toggle("open");
-
-  const isOpen = navLinks.classList.contains("open");
-  menuBtnIcon.setAttribute("class", isOpen ? "fas fa-times" : "fas fa-bars");
+  menuBtnIcon.classList.toggle("fa-bars");
+  menuBtnIcon.classList.toggle("fa-times");
 });
-
 
 
 
